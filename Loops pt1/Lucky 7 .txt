@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main() {
+  
+        int w=0,find=0;
+        cin >>w;
+        string s = to_string(w);
+        for ( int i =0 ; i<  sizeof(s);i++)
+        {
+            if (s[i] =='7')
+            {
+                find = 1;
+                break;
+            }
+        }
+        if (find ==1)
+        {
+            cout <<"Yes";
+        }
+        else 
+        {
+            cout <<"No";
+        }
+        return 0;
+ 
+ 
+    }
+ 

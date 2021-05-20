@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  
+        int t ,asum,bsum,csum,res;
+        cin>>t;
+        if (t >=-100 && t<=100)
+        {
+        while (t--)
+        {
+            int a,b,c; 
+            cin>> a>>b>>c;
+            asum=asum+a;
+            bsum=bsum+b;
+            csum=csum+c;
+            
+            
+        }
+    
+        if (asum == 0 && bsum==0 &&csum ==0 )
+        {
+            cout << "YES";
+        }
+        else
+        {
+            cout <<"NO";
+        }
+        
+        }
+	return 0;
+}

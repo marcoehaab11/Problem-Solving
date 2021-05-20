@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    long long  x , k ,mp ;
+    cin >>k>>x;
+	
+	mp =k/2;
+	
+	if (k%2 !=0)
+	{
+	    mp++;
+	};
+	if (x <= mp)
+	{
+	    cout<<(x-1)*2+1;
+	}
+	else 
+	{
+	    cout<< (x-mp)*2;
+	};
+	
+	
+	return 0;
+}

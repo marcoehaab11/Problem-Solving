@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+
+int main()
+{   double b , nb;
+    int cash;
+    cin >> cash>>b ;
+    
+    if(cash%5==0 && b>cash)
+     {      
+            nb= b-cash-0.50;
+        if(nb>=0)
+            cout << fixed << setprecision(2)<< nb;
+         else
+         {
+            cout << fixed << setprecision(2)<< b;
+          }
+     }
+     else
+     {
+            cout << fixed << setprecision(2)<< b;
+     }
+    
+    return 0 ;
+  
+    
+}

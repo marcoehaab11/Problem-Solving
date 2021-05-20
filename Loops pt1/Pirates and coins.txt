@@ -1,0 +1,29 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int a,n,m,x=0 ;
+    cin>>a>>m;
+    
+    m=m-a;
+    a++;
+    while(m>=0)
+    {
+        if(m==a)
+        {
+            x++;
+            a++;
+        }
+        else 
+        {
+            m=m-a;
+            a++;
+            x++;
+        }
+    }
+    cout << x;
+    
+    return 0;
+}

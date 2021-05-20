@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    long n,m,a,b,sp,res=0;
+    cin >> n>>m>>a>>b;
+    sp = n/m;
+
+    if  (n%m != 0)
+    {
+        res=res+1 ;   
+    }
+     if (m * a <= b)
+     {
+         cout << n * a << "\n";
+         
+     }
+     else
+     {
+    	cout << sp*b + min((n%m) * a, b);
+     }
+	return 0;
+}

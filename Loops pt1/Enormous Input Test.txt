@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    long n,k,x ; 
+    
+    cin >> n>>k ;
+    while (n--)
+    {   int a;
+        cin >>a;
+        if (a%k ==0)
+        {
+            x++;
+        }
+       
+    }
+    cout << x;
+	return 0;
+}

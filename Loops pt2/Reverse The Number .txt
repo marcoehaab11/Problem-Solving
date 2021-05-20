@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{   long t=0;
+    cin >> t;
+    while (t--)
+    {
+        long int  n=0,c=0,f=0,l=0,rinp=0;
+        cin>>n;
+        l=n%10;
+        n=n/10;
+        rinp=rinp+l;
+        while(n!=0)
+        {
+            f=n%10;
+            n=n/10;
+            rinp=(rinp*10)+(f);
+        }
+       
+       
+       cout<<rinp<<endl; 
+    }
+    
+    
+        
+    return 0;
+    
+}   

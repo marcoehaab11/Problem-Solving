@@ -1,0 +1,22 @@
+#include <cctype>
+#include <iostream>
+#include <cstring>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    char C[3];
+    cin >> C;
+    
+    if (C[1] == C[0] && C[1]==C[2])
+    {   
+        cout<<"Won";
+    }
+    else 
+    {
+        cout <<"Lost";
+    }
+    
+	return 0;
+}

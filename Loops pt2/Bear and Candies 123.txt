@@ -1,0 +1,52 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{   long t=0;
+    cin >> t;
+    while (t--)
+    {   
+        long a=0,b=0,c=1;
+        cin>>a>>b;
+        
+        while (a>-1 || b>-1)
+        {   
+            if (a==1 && b==2)
+          {
+            cout <<"Bob"<<endl;
+            break;
+           }
+            if (a==0 ||a<c)
+            {
+                cout <<"Bob"<<endl;
+                break;
+            }
+            else if (a>=c)
+            {
+                a=a-c;
+                c++;
+            }
+            
+            if (b==0 || b<c)
+            {
+                cout <<"Limak"<<endl;
+                break;
+            }
+            else if (b>=c)
+            {
+                b=b-c;
+                c++;
+            }
+        }
+     
+     
+    }
+    
+    
+        
+    return 0;
+    
+}   
+

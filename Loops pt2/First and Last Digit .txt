@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{   long t=0;
+    cin >> t;
+    while (t--)
+    {
+        long int  n=0,c=0,f=0,l=0;
+        cin>>n;
+        l=n%10;
+        while(n!=0){
+            f=n;
+            n=n/10;
+        }
+       
+       
+       cout<<l+f<<endl; 
+    }
+    
+    
+        
+    return 0;
+    
+}   

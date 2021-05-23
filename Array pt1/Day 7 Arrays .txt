@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long t=0;
+    cin>> t;
+    
+    long a[1000];
+    for (int i=0;i<t;i++)cin>>a[i];
+    for (int w=t-1;w>=0;w--)cout<<a[w]<<" ";
+
+    return 0;
+}

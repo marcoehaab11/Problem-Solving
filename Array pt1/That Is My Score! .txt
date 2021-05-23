@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t=0;
+    cin>>t;
+    
+    while(t--)
+    {
+        int n=0;
+        cin >>n;
+        int a[12]={0};
+        
+            for (int i=0;i<n;i++)
+            {   
+                int p=0,s=0;
+                cin>>p>>s;
+                if (a[p]<=s)
+                {
+                    a[p]=s;
+                }
+            }
+            int ans=0;
+            for(int i=0;i<9;i++)
+            {
+                ans +=a[i];
+                
+            }
+            cout <<ans<<endl;
+    }
+        
+}   
+    
+

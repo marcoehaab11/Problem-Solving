@@ -1,0 +1,10 @@
+# <iostream>
+cin,cout
+#<iomanip>
+setprecision
+
+#<cmath>
+pow,sqrt,cbrt,
+
+#<algorithm>
+max,min,sort,

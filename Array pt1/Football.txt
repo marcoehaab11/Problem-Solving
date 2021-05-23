@@ -1,0 +1,41 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int t=0;
+    cin>>t;
+    
+    while(t--)
+    {
+        int w=0;
+        int aa=0;
+        cin>>w;
+        int a[w]={0};
+        int b[w]={0}; 
+        int c[w]={0};
+        
+        
+           for (int i=0;i<w;i++) cin>>a[i];
+           for (int i=0;i<w;i++) cin>>b[i];
+
+            for (int i=0; i<w; i++)
+            {
+                c[i]=(a[i]*20)-(b[i]*10);
+               aa= max(c[i],aa);
+            }
+            if (aa>=0)
+            {
+                cout << aa << endl;
+            }
+            else {aa=0; cout<<aa<<endl;}
+        
+       }   
+
+    
+        
+        
+}   
+    
+

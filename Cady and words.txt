@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <algorithm> 
+
+using namespace std;
+int main()
+{   
+   
+   string a="",b="",c="";
+   long w=0;
+   cin>>a>>b;
+   int x=a.length();
+   reverse(a.begin(), a.end());
+    for(int i =0;i<x;i++)
+    {
+        if (b[i]==a[i])
+        {
+            w++;
+        }
+    }
+    if (w==x)
+    {
+        cout<<"Yes"<<endl;
+        
+    }
+    else {
+        cout<<"No";
+    }
+    return 0;
+}
+
